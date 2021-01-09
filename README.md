@@ -1,4 +1,4 @@
-# `line_intersection` [![View Intersection of Two Lines (line_intersection) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85413-intersection-of-two-lines-line_intersection)
+# `tridiagonal`
 
 Finds the intersection of two lines.
 
