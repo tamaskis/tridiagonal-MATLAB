@@ -10,22 +10,16 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 ## Description
 `x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?Ax=d" title="Ax=d" /> for <img src="https://latex.codecogs.com/svg.latex?x" title="x" />
-- `A` specifies the first line in slope-intercept form: <img src="https://latex.codecogs.com/svg.latex?y=m_{1}x&plus;b_{1}" title="y=m_{1}x+b_{1}" />
-- `[m2,b2]` specifies the second line in slope-intercept form: <img src="https://latex.codecogs.com/svg.latex?y=m_{2}x&plus;b_{2}" title="y=m_{2}x+b_{2}" />
-
-`[x,y] = line_intersection([x1,y1,m1],[x2,y2,m2])` finds the intersection point of two lines given in point-slope form.
-- `[x1,y1,m1]` specifies the first line in point-slope form: <img src="https://latex.codecogs.com/svg.latex?y-y_{1}=m_{1}\left(x-x_{1}\right)" title="y-y_{1}=m_{1}\left(x-x_{1}\right)" />
-- `[x2,y2,m2]` specifies the second line in point-slope form: <img src="https://latex.codecogs.com/svg.latex?y-y_{2}=m_{2}\left(x-x_{2}\right)" title="y-y_{2}=m_{2}\left(x-x_{2}\right)" />
-
-The two lines may also be defined using different conventions, for example `line_intersection([m1,b1],[x2,y2,m2])`.
+- `A`: tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?A\in\mathbb{R}^{n\times&space;n}" title="A\in\mathbb{R}^{n\times n}" />
+- `d`: vector <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}\in\mathbb{R}^{n}" title="\mathbf{d}\in\mathbb{R}^{n}" />
+- `x`: vector <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" />
 
 
 ## Example
 
-Consider the two lines
+Consider the tridiagonal matrix
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?y=5x&plus;2" title="y=5x+2" />\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?y-4=7\left(x-10\right)" title="y-4=7\left(x-10\right)" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?A=\begin{bmatrix}1&2&0&0&0\\3&4&5&0&0\\0&6&7&8&0\\0&0&9&1&2\\0&0&0&3&4\\\end{bmatrix},\quad\mathbf{d}=\begin{bmatrix}1\\2\\3\\4\\5\end{bmatrix}" title="A=\begin{bmatrix}1&2&0&0&0\\3&4&5&0&0\\0&6&7&8&0\\0&0&9&1&2\\0&0&0&3&4\\\end{bmatrix},\quad\mathbf{d}=\begin{bmatrix}1\\2\\3\\4\\5\end{bmatrix}" />
 
 To find the intersection point, we note that for line 1, we have <img src="https://latex.codecogs.com/svg.latex?m_{1}=5" title="m_{1}=5" /> and <img src="https://latex.codecogs.com/svg.latex?b_{1}=2" title="b_{1}=2" />, and that for line 2, we have <img src="https://latex.codecogs.com/svg.latex?x_{2}=10" title="x_{2}=10" />, <img src="https://latex.codecogs.com/svg.latex?y_{2}=4" title="y_{2}=4" />, and <img src="https://latex.codecogs.com/svg.latex?m_{2}=7" title="m_{2}=7" />.
 
