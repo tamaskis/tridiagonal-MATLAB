@@ -48,12 +48,12 @@ Solve the linear system.
 This yields the result
 
     x =
-
-        0.5934
-        0.1355
-        0.0452
-        0.2229
-        1.1386
+    
+       -0.7229
+        0.8614
+        0.1446
+       -0.3976
+        1.5482
 
 
 ## Tridiagonal Matrix Convention
