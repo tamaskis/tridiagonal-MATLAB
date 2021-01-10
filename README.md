@@ -1,17 +1,16 @@
 # `tridiagonal`
 
-Finds the intersection of two lines.
+Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?Ax=d" title="Ax=d" /> for <img src="https://latex.codecogs.com/svg.latex?x" title="x" /> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 
 
 ## Syntax
 
-`[x,y] = line_intersection([m1,b1],[m2,b2])`\
-`[x,y] = line_intersection([x1,y1,m1],[x2,y2,m2])`
+`x = tridiagonal(A,d)`
 
 
 ## Description
-`[x,y] = line_intersection([m1,b1],[m2,b2])` finds the intersection of two lines given in slope-intercept form.
-- `[m1,b1]` specifies the first line in slope-intercept form: <img src="https://latex.codecogs.com/svg.latex?y=m_{1}x&plus;b_{1}" title="y=m_{1}x+b_{1}" />
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?Ax=d" title="Ax=d" /> for <img src="https://latex.codecogs.com/svg.latex?x" title="x" />
+- `A` specifies the first line in slope-intercept form: <img src="https://latex.codecogs.com/svg.latex?y=m_{1}x&plus;b_{1}" title="y=m_{1}x+b_{1}" />
 - `[m2,b2]` specifies the second line in slope-intercept form: <img src="https://latex.codecogs.com/svg.latex?y=m_{2}x&plus;b_{2}" title="y=m_{2}x+b_{2}" />
 
 `[x,y] = line_intersection([x1,y1,m1],[x2,y2,m2])` finds the intersection point of two lines given in point-slope form.
