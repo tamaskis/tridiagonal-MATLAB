@@ -54,3 +54,11 @@ This yields the result
         0.0452
         0.2229
         1.1386
+        
+        
+## References
+
+https://www.cfd-online.com/Wiki/Tridiagonal_matrix_algorithm_-_TDMA_(Thomas_algorithm)
+https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
+
+*NOTE: These references have <img src="https://latex.codecogs.com/svg.latex?a_{i}" title="a_{i}" />'s ranging from <img src="https://latex.codecogs.com/svg.latex?a_{2}" title="a_{2}" /> to <img src="https://latex.codecogs.com/svg.latex?a_{n}" title="a_{n}" /> both in the definition of the tridiagonal matrix and in the algorithm used to solve the corresponding linear system. In this implementation, I have the <img src="https://latex.codecogs.com/svg.latex?a_{i}" title="a_{i}" />'s ranging from <img src="https://latex.codecogs.com/svg.latex?a_{1}" title="a_{1}" /> to <img src="https://latex.codecogs.com/svg.latex?a_{n-1}" title="a_{n-1}" />; this makes the algorithm slightly more straightforward to implement.*
