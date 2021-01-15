@@ -41,7 +41,7 @@ Enter <img src="https://latex.codecogs.com/svg.latex?A" title="A" /> and <img sr
          4;
          5];
  
-Solve the linear system.
+Solve the tridiagonal linear system.
 
     x = tridiagonal(A,d)
 
