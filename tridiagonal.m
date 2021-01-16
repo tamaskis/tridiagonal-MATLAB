@@ -2,13 +2,11 @@
 % tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 %
 %   x = tridiagonal(A,d) solves the tridiagonal linear system Ax=d 
-%       for x
-%        --> A: n-by-n tridiagonal matrix
-%        --> d: n-by-1 vector
-%        --> x: n-by-1 vector
+%       for x (an n-by-1 vector), where A is an n-by-n tridiagonal matrix
+%       and d is an n-by-1 vector.
 %
 % See https://github.com/tamaskis/tridiagonal-MATLAB for additional 
-% documentation and examples. Examples can also be found in EXAMPLE.m 
+% documentation and examples. An example can also be found in EXAMPLE.m 
 % (included with download).
 
 
@@ -19,15 +17,16 @@
 % Tamas Kis
 
 % VERSION HISTORY:
-% v1.0.0.0: 10-Jan-2021, First version.
+% v1.0.0: 10-Jan-2021, First version.
+% v1.0.1: 16-Jan-2021, Added external documentation, changed some comments.
 
 
 
 %% FUNCTION
 
-% INPUT(S): A - nxn tridiagonal matrix
-%           d - nx1 d vector
-% OUTPUT(S): x - solution of linear system (nx1 x vector)
+% INPUT(S): A - n-by-n tridiagonal matrix
+%           d - n-by-1 vector
+% OUTPUT(S): x - solution of linear system (n-by-1 vector)
 function x = tridiagonal(A,d)
 
     % determines n
