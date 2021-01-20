@@ -8,18 +8,8 @@
 % See https://github.com/tamaskis/tridiagonal-MATLAB for additional 
 % documentation and examples. An example can also be found in EXAMPLE.m 
 % (included with download).
-
-
-
-%% Copyright (c) 2021 Tamas Kis
-
-% AUTHOR:
-% Tamas Kis
-
-% VERSION HISTORY:
-% v1.0.0: 10-Jan-2021, First version.
-% v1.0.1: 16-Jan-2021, Added external documentation, changed some comments.
-% v1.0.2: 17-Jan-2021, Updated external documentation.
+%
+% Copyright (c) 2021 Tamas Kis
 
 
 

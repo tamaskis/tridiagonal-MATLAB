@@ -2,9 +2,6 @@
 
 % Example for using the tridiagonal function.
 
-% AUTHOR: Tamas Kis
-% LAST MODIFIED: January 10, 2021
-
 
 
 %% SCRIPT SETUP
