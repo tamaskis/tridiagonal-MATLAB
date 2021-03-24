@@ -5,11 +5,15 @@
 %       for x (an n-by-1 vector), where A is an n-by-n tridiagonal matrix
 %       and d is an n-by-1 vector.
 %
-% See https://github.com/tamaskis/tridiagonal-MATLAB for additional 
-% documentation and examples. An example can also be found in EXAMPLE.m 
-% (included with download).
+% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal
+% GitHub: https://github.com/tamaskis/tridiagonal-MATLAB
+%
+% See "DOCUMENTATION.pdf" for additional documentation and examples. 
+% Examples can also be found in EXAMPLES.m. Both of these files are 
+% included with the download.
 %
 % Copyright (c) 2021 Tamas Kis
+% Last Update: 2021-03-24
 
 
 
