@@ -9,51 +9,12 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 
 ## Description
-`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?A\mathbf{x}=\mathbf{d}" title="A\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" />.
-- `A`: tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?A\in\mathbb{R}^{n\times&space;n}" title="A\in\mathbb{R}^{n\times n}" />
-- `d`: vector <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}\in\mathbb{R}^{n}" title="\mathbf{d}\in\mathbb{R}^{n}" />
-- `x`: vector <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" />
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?A\mathbf{x}=\mathbf{d}" title="A\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" /> (an <img src="https://latex.codecogs.com/svg.latex?n\times1" title="n\times1" /> vector), where <img src="https://latex.codecogs.com/svg.latex?A" title="A" /> is an <img src="https://latex.codecogs.com/svg.latex?n\times&space;n" title="n\times n" /> tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}" title="\mathbf{d}" /> is an <img src="https://latex.codecogs.com/svg.latex?n\times1" title="n\times1" /> vector.
 
 
-## Example
+## Additional Documentation and Examples
 
-Consider the tridiagonal linear system
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?A\mathbf{x}=\mathbf{d}" title="A\mathbf{x}=\mathbf{d}" />
-
-where
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?A=\begin{bmatrix}1&2&0&0&0\\3&4&5&0&0\\0&6&7&8&0\\0&0&9&1&2\\0&0&0&3&4\\\end{bmatrix},\quad\mathbf{d}=\begin{bmatrix}1\\2\\3\\4\\5\end{bmatrix}" title="A=\begin{bmatrix}1&2&0&0&0\\3&4&5&0&0\\0&6&7&8&0\\0&0&9&1&2\\0&0&0&3&4\\\end{bmatrix},\quad\mathbf{d}=\begin{bmatrix}1\\2\\3\\4\\5\end{bmatrix}" />
-
-Enter <img src="https://latex.codecogs.com/svg.latex?A" title="A" /> and <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}" title="\mathbf{d}" /> into MATLAB.
-
-    % defines tridiagonal matrix A
-    A = [1,2,0,0,0;
-         3,4,5,0,0;
-         0,6,7,8,0;
-         0,0,9,1,2;
-         0,0,0,3,4];
-
-    % defines vector d
-    d = [1;
-         2;
-         3;
-         4;
-         5];
- 
-Solve the tridiagonal linear system.
-
-    x = tridiagonal(A,d)
-
-This yields the result
-
-    x =
-    
-       -0.7229
-        0.8614
-        0.1446
-       -0.3976
-        1.5482
+See "DOCUMENTATION.pdf" for additional documentation and examples.
 
 
 ## Tridiagonal Matrix Convention
