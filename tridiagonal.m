@@ -1,9 +1,9 @@
 % tridiagonal  Solves the tridiagonal linear system Ax=d for x using the
 % tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 %
-%   x = tridiagonal(A,d) solves the tridiagonal linear system Ax=d 
-%       for x (an n-by-1 vector), where A is an n-by-n tridiagonal matrix
-%       and d is an n-by-1 vector.
+%   x = tridiagonal(A,d) solves the tridiagonal linear system Ax=d for x 
+%   (an n-by-1 vector), where A is an n-by-n tridiagonal matrix and d is an
+%   n-by-1 vector.
 %
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal
 % GitHub: https://github.com/tamaskis/tridiagonal-MATLAB
