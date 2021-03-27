@@ -9,7 +9,7 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 
 ## Description
-`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\mathbf{x}=\mathbf{d}" title="\mathbf{A}\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" /> (an <img src="https://latex.codecogs.com/svg.latex?n\times1" title="n\times1" /> vector), where <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}" title="\mathbf{A}" /> is an <img src="https://latex.codecogs.com/svg.latex?n\times&space;n" title="n\times n" /> tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}\in\mathbb{R}^{n}" title="\mathbf{d}\in\mathbb{R}^{n}" />.
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\mathbf{x}=\mathbf{d}" title="\mathbf{A}\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" /> (an <img src="https://latex.codecogs.com/svg.latex?n\times1" title="n\times1" /> vector), where <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\in\mathbb{R}^{n\times&space;n}" title="\mathbf{A}\in\mathbb{R}^{n\times n}" /> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\mathbf{b}\in\mathbb{R}^{n}" title="\mathbf{b}\in\mathbb{R}^{n}" />.
 .
 
 
