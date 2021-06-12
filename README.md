@@ -1,7 +1,7 @@
 # `tridiagonal`
 
 
-Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;Ax=d"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;x"/> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
+Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{x}"/> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 
 
   
@@ -19,7 +19,7 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
   
 
 
-`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;Ax=d"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;x"/>, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;A\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\inline&space;d\in&space;{\mathbb{R}}^n"/>.
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{x}"/>, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{d}\in&space;{\mathbb{R}}^n"/>.
 
 
   
@@ -27,7 +27,7 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 ## Tridiagonal Matrix Convention
 
 
-For this implementation, I use the following convention for denoting the elements of the tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?\inline&space;A"/>:
+For this implementation, I use the following convention for denoting the elements of the tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}"/>:
 
 
 
