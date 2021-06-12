@@ -1,6 +1,6 @@
 # `tridiagonal` [![View Tridiagonal Matrix Algorithm (Thomas Alg.) (tridiagonal) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal)
 
-Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;x\in\mathbb{R}^{n}" title="x\in\mathbb{R}^{n}" /> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
+Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" /> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 
 
 ## Syntax
