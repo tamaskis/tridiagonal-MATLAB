@@ -1,27 +1,47 @@
-# `tridiagonal` [![View Tridiagonal Matrix Algorithm (Thomas Alg.) (tridiagonal) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal)
-
-Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\mathbf{x}=\mathbf{d}" title="\mathbf{A}\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" /> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
+# `tridiagonal`
 
 
+Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;Ax=d"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;x"/> using the tridiagonal matrix algorithm (i.e. the Thomas algorithm).
+
+
+  
+  
 ## Syntax
+  
+
 
 `x = tridiagonal(A,d)`
 
 
+  
+  
 ## Description
-`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\mathbf{x}=\mathbf{d}" title="\mathbf{A}\mathbf{x}=\mathbf{d}" /> for <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}" title="\mathbf{x}" /> (an <img src="https://latex.codecogs.com/svg.latex?n\times1" title="n\times1" /> vector), where <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}\in\mathbb{R}^{n\times&space;n}" title="\mathbf{A}\in\mathbb{R}^{n\times n}" /> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\mathbf{d}\in\mathbb{R}^{n}" title="\mathbf{d}\in\mathbb{R}^{n}" />.
-.
+  
 
 
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;Ax=d"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;x"/>, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;A\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\inline&space;d\in&space;{\mathbb{R}}^n"/>.
+
+
+  
+  
 ## Tridiagonal Matrix Convention
 
-For this implementation, I use the following convention for denoting the elements of the tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}" title="\mathbf{A}" />:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://latex.codecogs.com/svg.latex?\mathbf{A}=\begin{bmatrix}b_{1}&c_{1}\\a_{1}&b_{2}&c_{2}\\&a_{2}&\ddots&\ddots\\&&\ddots&\ddots&c_{n-2}\\&&&&space;a_{n-2}&b_{n-1}&c_{n-1}\\&&&&a_{n-1}&&space;b_{n}\\\end{bmatrix}" title="\mathbf{A}=\begin{bmatrix}b_{1}&c_{1}\\a_{1}&b_{2}&c_{2}\\&a_{2}&\ddots&\ddots\\&&\ddots&\ddots&c_{n-2}\\&&& a_{n-2}&b_{n-1}&c_{n-1}\\&&&&a_{n-1}& b_{n}\\\end{bmatrix}" />
-
-Most references, including the two listed below, have <img src="https://latex.codecogs.com/svg.latex?a_{i}" title="a_{i}" />'s ranging from <img src="https://latex.codecogs.com/svg.latex?a_{2}" title="a_{2}" /> to <img src="https://latex.codecogs.com/svg.latex?a_{n}" title="a_{n}" /> both in the definition of the tridiagonal matrix and in the algorithm used to solve the corresponding linear system. In this implementation, I have the <img src="https://latex.codecogs.com/svg.latex?a_{i}" title="a_{i}" />'s ranging from <img src="https://latex.codecogs.com/svg.latex?a_{1}" title="a_{1}" /> to <img src="https://latex.codecogs.com/svg.latex?a_{n-1}" title="a_{n-1}" />; this makes the algorithm slightly more straightforward to implement.
+For this implementation, I use the following convention for denoting the elements of the tridiagonal matrix <img src="https://latex.codecogs.com/svg.latex?\inline&space;A"/>:
 
 
-## Additional Documentation and Examples
 
-See "DOCUMENTATION.pdf" for additional documentation and examples.
+<img src="https://latex.codecogs.com/svg.latex?\mathbf{A}=\left\lbrack&space;\begin{array}{cccccc}&space;b_1&space;&space;&&space;c_1&space;&space;&&space;&space;&&space;&space;&&space;&space;&&space;\\&space;a_1&space;&space;&&space;b_2&space;&space;&&space;c_2&space;&space;&&space;&space;&&space;&space;&&space;\\&space;&space;&&space;a_2&space;&space;&&space;\ddots&space;&space;&&space;\ddots&space;&space;&&space;&space;&&space;\\&space;&space;&&space;&space;&&space;\ddots&space;&space;&&space;\ddots&space;&space;&&space;c_{n-2}&space;&space;&&space;\\&space;&space;&&space;&space;&&space;&space;&&space;a_{n-2}&space;&space;&&space;b_{n-1}&space;&space;&&space;c_{n-1}&space;\\&space;&space;&&space;&space;&&space;&space;&&space;&space;&&space;a_{n-1}&space;&space;&&space;b_n&space;&space;\end{array}\right\rbrack"/>
+
+
+
+Most other references have <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_i"/>'s ranging from <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_2"/> to <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_n"/> both in the definition of the tridiagonal matrix and in the algorithm used to solve the corresponding linear system. In this implementation, I have the <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_i"/>'s ranging from <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_1"/> to <img src="https://latex.codecogs.com/svg.latex?\inline&space;a_{n-1}"/>; this makes the algorithm slightly more straightforward to implement.
+
+
+  
+  
+## Examples and Additional Documentation
+
+   -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples. 
+   -  See "DOCUMENTATION.pdf" (included with download, also available at [https://github.com/tamaskis/tridiagonal-MATLAB/blob/main/DOCUMENTATION.pdf](https://github.com/tamaskis/tridiagonal-MATLAB/blob/main/DOCUMENTATION.pdf)) for additional documentation. 
+
