@@ -10,7 +10,7 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 ## Description
 
-`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{x}"/>, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{d}\in&space;{\mathbb{R}}^n"/>.
+`x = tridiagonal(A,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" />, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{A}\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix and <img src="https://latex.codecogs.com/svg.latex?\inline&space;\mathbf{d}\in&space;{\mathbb{R}}^n"/>.
 
 
 ## Tridiagonal Matrix Convention
