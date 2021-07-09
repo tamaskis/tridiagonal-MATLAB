@@ -5,8 +5,11 @@
 %
 %   x = tridiagonal(A,d)
 %
+% See also inv, gaussian_elimination.
+%
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-12
+% Contact: tamas.a.kis@outlook.com
+% Last Update: 2021-07-09
 %
 %--------------------------------------------------------------------------
 %
@@ -18,15 +21,15 @@
 %
 %--------------------------------------------------------------------------
 %
-% -------
-% INPUTS:
-% -------
+% ------
+% INPUT:
+% ------
 %   A       - (n×n) tridiagonal matrix
 %   d       - (n×1) vector
 %
-% --------
-% OUTPUTS:
-% --------
+% -------
+% OUTPUT:
+% -------
 %   x       - (n×1) solution of the tridiagonal linear system Ax=d
 %
 %==========================================================================
