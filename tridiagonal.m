@@ -8,29 +8,30 @@
 % See also inv, gaussian_elimination.
 %
 % Copyright © 2021 Tamas Kis
+% Last Update: 2021-08-28
+% Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-09
 %
-%--------------------------------------------------------------------------
+% TECHNICAL DOCUMENTATION:
+% https://tamaskis.github.io/documentation/Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf
 %
-% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal
-% GitHub: https://github.com/tamaskis/tridiagonal-MATLAB
-%
-% See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
-% documentation. Both of these files are included with the download.
+% REFERENCES:
+%   [1] MATH 2620 Course Reader (Vanderbilt University)
+%   [2] https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
+%   [3] https://www.cfd-online.com/Wiki/Tridiagonal_matrix_algorithm_-_TDMA_(Thomas_algorithm)
 %
 %--------------------------------------------------------------------------
 %
 % ------
 % INPUT:
 % ------
-%   A       - (n×n) tridiagonal matrix
-%   d       - (n×1) vector
+%   A       - (n×n double) tridiagonal matrix
+%   d       - (n×1 double) vector
 %
 % -------
 % OUTPUT:
 % -------
-%   x       - (n×1) solution of the tridiagonal linear system Ax=d
+%   x       - (n×1 double) solution of the tridiagonal linear system Ax=d
 %
 %==========================================================================
 function x = tridiagonal(A,d)

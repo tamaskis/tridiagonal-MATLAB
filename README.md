@@ -24,5 +24,5 @@ Most other references have <img src="https://latex.codecogs.com/svg.latex?\inlin
 
 ## Examples and Additional Documentation
 
-   -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples. 
-   -  See "DOCUMENTATION.pdf" (included with download, also available at [https://github.com/tamaskis/tridiagonal-MATLAB/blob/main/DOCUMENTATION.pdf](https://github.com/tamaskis/tridiagonal-MATLAB/blob/main/DOCUMENTATION.pdf)) for additional documentation.
+   - See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples. 
+   - See ["Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf"](https://tamaskis.github.io/documentation/Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf) (also included with download) for the technical documentation.
