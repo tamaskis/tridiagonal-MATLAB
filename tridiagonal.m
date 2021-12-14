@@ -5,10 +5,10 @@
 %
 %   x = tridiagonal(A,d)
 %
-% See also inv, gaussian_elimination.
+% See also \, mldivide, /, mrdivide, inv, inv, gaussian_elimination.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-08-28
+% Last Update: 2021-12-14
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -37,7 +37,7 @@
 function x = tridiagonal(A,d)
 
     % determines n
-    n = size(A,1);
+    n = length(d);
     
     % preallocates all necessary vectors
     a = zeros(n-1,1);
@@ -45,29 +45,25 @@ function x = tridiagonal(A,d)
     c = zeros(n-1,1);
     x = zeros(n,1);
     
-    % extracts "a" from "A"
+    % extracts first element of "b" from "A"
+    b(1) = A(1,1);
+
+    % forward loop
     for i = 2:n
+
+        % extract relevant elements of "a", "b", and "c" from "A"
         a(i-1) = A(i,i-1);
-    end
-    
-    % extracts "b" from "A"
-    for i = 1:n
         b(i) = A(i,i);
-    end
-    
-    % extracts "c" from "A"
-    for i = 2:n
         c(i-1) = A(i-1,i);
-    end
-    
-    % forward elimination
-    for i = 2:n
+
+        % forward elimination
         w = a(i-1)/b(i-1);
         b(i) = b(i)-w*c(i-1);
         d(i) = d(i)-w*d(i-1);
+
     end
     
-    % backward substitution
+    % backward loop (backward substitution)
     x(n) = d(n)/b(n);
     for i = (n-1):(-1):1
         x(i) = (d(i)-c(i)*x(i+1))/b(i);
