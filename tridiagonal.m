@@ -5,20 +5,13 @@
 %
 %   x = tridiagonal(A,d)
 %
-% See also \, mldivide, /, mrdivide, inv, gaussian_elimination.
-%
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-12-26
+% Last Update: 2022-04-16
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
 % https://tamaskis.github.io/documentation/Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf
-%
-% REFERENCES:
-%   [1] MATH 2620 Course Reader (Vanderbilt University)
-%   [2] https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
-%   [3] https://www.cfd-online.com/Wiki/Tridiagonal_matrix_algorithm_-_TDMA_(Thomas_algorithm)
 %
 %--------------------------------------------------------------------------
 %
