@@ -1,17 +1,17 @@
 %==========================================================================
 %
-% tridiagonal  Solves the tridiagonal linear system Ax=d for x using the
+% tridiagonal  Solves the tridiagonal linear system Ax = d for x using the
 % tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 %
 %   x = tridiagonal(A,d)
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2022-04-16
+% Last Update: 2022-10-11
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
-% https://tamaskis.github.io/documentation/Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf
+% https://tamaskis.github.io/files/Tridiagonal_Matrix_Algorithm__Thomas_Algorithm_.pdf
 %
 %--------------------------------------------------------------------------
 %
@@ -24,11 +24,11 @@
 % -------
 % OUTPUT:
 % -------
-%   x       - (n×1 double) solution of the tridiagonal linear system Ax=d
+%   x       - (n×1 double) solution of the tridiagonal linear system Ax = d
 %
 %==========================================================================
 function x = tridiagonal(A,d)
-
+    
     % determines n
     n = length(d);
     
@@ -40,20 +40,20 @@ function x = tridiagonal(A,d)
     
     % extracts first element of "b" from "A"
     b(1) = A(1,1);
-
+    
     % forward loop
     for i = 2:n
-
+        
         % extract relevant elements of "a", "b", and "c" from "A"
         a(i-1) = A(i,i-1);
         b(i) = A(i,i);
         c(i-1) = A(i-1,i);
-
+        
         % forward elimination
         w = a(i-1)/b(i-1);
         b(i) = b(i)-w*c(i-1);
         d(i) = d(i)-w*d(i-1);
-
+        
     end
     
     % backward loop (backward substitution)
