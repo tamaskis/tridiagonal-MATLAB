@@ -1,4 +1,4 @@
-# Tridiagonal Matrix Algorithm [![View Tridiagonal Matrix Algorithm (Thomas Alg.) (tridiagonal) on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm-thomas-alg-tridiagonal)
+# Tridiagonal Matrix Algorithm [![View Tridiagonal Matrix Algorithm on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/85438-tridiagonal-matrix-algorithm)
 
 
 
