@@ -33,12 +33,12 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 ## Syntax
 
-`x = tridiagonal_matrix(a,b,c,d)`
+`x = tridiagonal_vector(a,b,c,d)`
 
 
 ## Description
 
-`x = tridiagonal_matrix(a,b,c,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" />, where <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{A}\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix defined using the tridiagonal vectors (<img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{a}\in\mathbb{R}^{n-1}"/>, <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{b}\in\mathbb{R}^{n}"/>, and <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{c}\in\mathbb{R}^{n-1}"/>) and where <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{d}\in&space;{\mathbb{R}}^n"/>.
+`x = tridiagonal_vector(a,b,c,d)` solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{A}\mathbf{x}=\mathbf{d}"/> for <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{x}\in\mathbb{R}^{n}" title="\mathbf{x}\in\mathbb{R}^{n}" />, where <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{A}\in&space;{\mathbb{R}}^{n\times&space;n}"/> is a tridiagonal matrix defined using the tridiagonal vectors (<img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{a}\in\mathbb{R}^{n-1}"/>, <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{b}\in\mathbb{R}^{n}"/>, and <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{c}\in\mathbb{R}^{n-1}"/>) and where <img src="https://latex.codecogs.com/svg.image?\inline&space;\mathbf{d}\in&space;{\mathbb{R}}^n"/>.
 
 
 
