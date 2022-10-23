@@ -3,7 +3,6 @@
 
 
 <br/><br/> 
-<br/><br/> 
 
 
 
@@ -23,7 +22,6 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 
 
-<br/><br/> 
 <br/><br/> 
 
 
@@ -45,7 +43,6 @@ Solves the tridiagonal linear system <img src="https://latex.codecogs.com/svg.la
 
 
 <br/><br/> 
-<br/><br/> 
 
 
 
@@ -59,7 +56,6 @@ Most other references have <img src="https://latex.codecogs.com/svg.latex?\inlin
 
 
 
-<br/><br/> 
 <br/><br/> 
 
 
